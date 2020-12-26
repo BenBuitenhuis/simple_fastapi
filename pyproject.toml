@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "main"
+version = "0.1.0"
+description = ""
+authors = ["mrnobody <jesavius@yahoo.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.63.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipython = "^7.19.0"
+pytest-clarity = "^0.3.0-alpha.0"
+prettyprinter = "^0.18.0"
+Scrapy = "^2.4.1"
+pre-commit = "^2.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
