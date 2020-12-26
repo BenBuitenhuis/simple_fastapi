@@ -2,7 +2,7 @@
 import json
 
 from main import __version__
-from main.helper import yomama
+from main.helper import laugh, laughing, yomama
 
 with open("yo_mama.json") as read:
     """
@@ -32,15 +32,14 @@ def test_passing_yomama():
     assert the_joke in jokes
 
 
-def test_failing_yomama(still_funny):
+def test_laughing():
     """
-    Faling test for yo mama.
+    Testing laughing emoji function.
     """
-    # GIVEN yomama function
-    no_mama = yomama
+    # GIVEN laugh function
 
     # WHEN called
-    no_joke = no_mama()
+    the_laugh = laugh()
 
-    # THEN ensure that joke's not in our list
-    assert no_joke != still_funny
+    # Assert that it has one of the emojis in the list
+    assert the_laugh in laughing

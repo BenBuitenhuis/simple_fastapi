@@ -4,6 +4,8 @@ The Main FastAPI app.
 """
 from fastapi import FastAPI
 
+from main.helper import laugh, yomama
+
 app = FastAPI(
     title="Yo Mama!",
     description="A couple of random yo mama jokes.",
@@ -11,12 +13,12 @@ app = FastAPI(
 )
 
 
-@app.get()
-def yo_mama():
+@app.get("/")
+async def yo_mama():
     """
     Yup!
 
     Yo' Mama...
 
     """
-    pass
+    return {"yo_mama": yomama() + laugh()}
