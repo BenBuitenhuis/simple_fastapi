@@ -4,7 +4,7 @@ The Main FastAPI app.
 """
 from fastapi import FastAPI
 
-from main.helper import laugh, yomama
+from src.helper import laugh, yomama
 
 app = FastAPI(
     title="Yo Mama!",

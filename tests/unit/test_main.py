@@ -1,14 +1,6 @@
 # -*- coding: utf-8 -*-
-import json
-
-from main import __version__
-from main.helper import laugh, laughing, yomama
-
-with open("yo_mama.json") as read:
-    """
-    Getting joke list.
-    """
-    jokes = json.load(read)
+from src import __version__
+from src.helper import laugh, laughing, yomama
 
 
 def test_version():
@@ -18,7 +10,7 @@ def test_version():
     assert __version__ == "0.1.0"
 
 
-def test_passing_yomama():
+def test_passing_yomama(the_jokes):
     """
     Passing test for you mama.
     """
@@ -26,10 +18,10 @@ def test_passing_yomama():
     mama = yomama
 
     # WHEN called
-    the_joke = mama()
+    joke = mama()
 
     # THEN a random joke is given that's in our jokes list
-    assert the_joke in jokes
+    assert joke in the_jokes
 
 
 def test_laughing():

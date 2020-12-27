@@ -18,6 +18,7 @@ pytest-clarity = "^0.3.0-alpha.0"
 prettyprinter = "^0.18.0"
 Scrapy = "^2.4.1"
 pre-commit = "^2.9.3"
+requests = "^2.25.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
