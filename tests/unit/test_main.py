@@ -12,7 +12,7 @@ def test_version():
 
 def test_passing_yomama(the_jokes):
     """
-    Passing test for you mama.
+    Passing test for yo mama function.
     """
     # GIVEN yomama function
     mama = yomama
@@ -33,5 +33,5 @@ def test_laughing():
     # WHEN called
     the_laugh = laugh()
 
-    # Assert that it has one of the emojis in the list
+    # Assert that it has one of the emojis in the our emoji list
     assert the_laugh in laughing

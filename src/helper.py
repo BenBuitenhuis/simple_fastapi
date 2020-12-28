@@ -4,9 +4,12 @@ Helper functions for FastAPI app.
 """
 import json
 import secrets
+from pathlib import Path
+
+your_mother = Path("yo_mama.json")
 
 # Loading our json into a python list
-with open("yo_mama.json") as r:
+with your_mother.open() as r:
     mama = json.load(r)
 
 # Creating a list of our laugh emojis

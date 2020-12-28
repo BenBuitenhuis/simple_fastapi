@@ -7,18 +7,29 @@ from pathlib import Path
 
 import pytest
 
-your_mother = Path("../yo_mama.json")
+from src.helper import laughing
+
+your_mother = Path("yo_mama.json").absolute()
 
 with your_mother.open() as r:
     """
-    Reading JSON file of "Yo Mama" jokes.
+    Reading in JSON file of "Yo Mama" jokes and converting to Python
+    list.
     """
     jokes = json.load(r)
 
 
-@pytest.fixture(scope="function", params=jokes)
-def the_jokes(request):
+@pytest.fixture(scope="function")
+def the_jokes():
     """
     Returning jokes lists for tests.
     """
-    return request.params
+    return jokes
+
+
+@pytest.fixture(scope="function")
+def the_laughs():
+    """
+    Return the list of laughing emojis.
+    """
+    return laughing

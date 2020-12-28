@@ -19,7 +19,27 @@ def test_joke_200():
     assert response.status_code == 200
 
 
-def test_joke_passing():
+def test_joke_passing(the_jokes):
     """
     Ensure right jokes are given.
     """
+    # GIVEN a FastAPI GET request
+
+    # WHEN GET request to index
+    response = client.get("/")
+
+    resp = response.json()
+
+    # THEN
+    assert resp.get("yo_mama")[:-1] in the_jokes
+
+
+def test_joke_has_an_emoji(the_laughs):
+    """
+    Validate that an emoji is in our joke response.
+    """
+    response = client.get("/")
+
+    resp = response.json()
+
+    assert resp.get("yo_mama")[-1] in the_laughs
