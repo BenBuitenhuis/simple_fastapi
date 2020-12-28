@@ -30,7 +30,7 @@ def test_joke_passing(the_jokes):
 
     resp = response.json()
 
-    # THEN
+    # THEN assert that joke is within our jokes list.
     assert resp.get("yo_mama")[:-1] in the_jokes
 
 
@@ -38,8 +38,12 @@ def test_joke_has_an_emoji(the_laughs):
     """
     Validate that an emoji is in our joke response.
     """
+    # GIVEN FastAPI app
+
+    # WHEN GET request is sent
     response = client.get("/")
 
     resp = response.json()
 
+    # THEN assert that an emoji is added to the end.
     assert resp.get("yo_mama")[-1] in the_laughs

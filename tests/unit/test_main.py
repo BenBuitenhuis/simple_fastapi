@@ -33,5 +33,5 @@ def test_laughing():
     # WHEN called
     the_laugh = laugh()
 
-    # Assert that it has one of the emojis in the our emoji list
+    # THEN Assert that it has one of the emojis in the our emoji list
     assert the_laugh in laughing
