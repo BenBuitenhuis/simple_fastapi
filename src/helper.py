@@ -28,3 +28,10 @@ def laugh():
     Function that returns a random laughing emoji.
     """
     return secrets.choice(laughing)
+
+
+def the_joke():
+    """
+    Combining both joke and emojis into one function.
+    """
+    return yomama() + laugh()

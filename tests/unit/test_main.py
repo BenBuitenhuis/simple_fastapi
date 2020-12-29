@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from src import __version__
-from src.helper import laugh, laughing, yomama
+from src.helper import laugh, laughing, the_joke, yomama
 
 
 def test_version():
@@ -35,3 +35,23 @@ def test_laughing():
 
     # THEN Assert that it has one of the emojis in the our emoji list
     assert the_laugh in laughing
+
+
+def test_the_joke_has_an_emoji(the_laughs):
+    """
+    Make sure the the_jokes functions returns joke with emoji.
+    """
+    # GIVEN the_jokes function
+
+    # WHEN called
+    a_joke = the_joke()
+
+    # THEN joke contains emoji
+    assert a_joke[-1] in the_laughs
+
+
+def test_the_joke_has_joke_in_list(the_jokes):
+    """
+    Make sure the_jokes functions contains joke in list.
+    """
+    pass
