@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# tests/unit/test_main.py
 from src import __version__
 from src.helper import laugh, laughing, the_joke, yomama
 
