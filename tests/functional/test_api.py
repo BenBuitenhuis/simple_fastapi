@@ -13,7 +13,7 @@ def test_joke_200():
     # GIVEN FastAPI app
 
     # WHEN GET request to root is given
-    response = client.get("/")
+    response = client.get("/yo_mama")
 
     # THEN 200 is returned
     assert response.status_code == 200
@@ -26,7 +26,7 @@ def test_joke_passing(the_jokes):
     # GIVEN a FastAPI GET request
 
     # WHEN GET request to index
-    response = client.get("/")
+    response = client.get("/yo_mama")
 
     resp = response.json()
 
@@ -41,7 +41,7 @@ def test_joke_has_an_emoji(the_laughs):
     # GIVEN FastAPI app
 
     # WHEN GET request is sent
-    response = client.get("/")
+    response = client.get("/yo_mama")
 
     resp = response.json()
 

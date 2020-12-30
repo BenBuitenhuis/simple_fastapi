@@ -54,4 +54,10 @@ def test_the_joke_has_joke_in_list(the_jokes):
     """
     Make sure the_jokes functions contains joke in list.
     """
-    pass
+    # GIVEN the_jokes function
+
+    # WHEN called
+    a_joke = the_joke()
+
+    # Then joke contains joke in jokes list
+    assert a_joke[:-1] in the_jokes

@@ -11,14 +11,18 @@ pytest-pythonpath = "^0.7.3"
 fastapi = {extras = ["all"], version = "^0.63.0"}
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
 ipython = "^7.19.0"
 pytest-clarity = "^0.3.0-alpha.0"
 prettyprinter = "^0.18.0"
 Scrapy = "^2.4.1"
 pre-commit = "^2.9.3"
 httpx = "^0.16.1"
+pytest = "^6.2.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-rssxX -l --tb=short --strict -vvv -p no:warnings"
+xfail_strict = "True"
