@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# tests/conftest.py
 """
 Fixtures and parametrized variables.
 """
