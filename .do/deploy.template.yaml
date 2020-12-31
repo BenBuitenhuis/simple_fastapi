@@ -1,0 +1,15 @@
+name: fastapi-d-oapp
+region: nyc
+services:
+- environment_slug: python
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: mrcartoonster/fastapi_DOapp
+  http_port: 8080
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: fastapi-d-oapp
+  routes:
+  - path: /
+  run_command: gunicorn --worker-tmp-dir /dev/shm --config gunicorn.conf.py src.main:app

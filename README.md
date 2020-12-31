@@ -1,3 +1,5 @@
+[![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/{mrcartoonster}/{fastapi_DOapp}/tree/{main})
+
 ![Python application](https://github.com/mrcartoonster/fastapi_DOapp/workflows/Python%20application/badge.svg)
 # [FastAPI]() and [DigitalOcean's App Platform]()
 
@@ -22,7 +24,7 @@ This is a basic FastAPI app of random Yo' Mama jokes. That's pretty much it.
 
 ## Permissive License
 
-[MIT]()
+[MIT](https://github.com/mrcartoonster/fastapi_DOapp/blob/DEV-4-blog-post/LICENSE)
 
 
 ## Background
