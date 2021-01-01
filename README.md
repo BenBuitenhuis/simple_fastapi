@@ -25,8 +25,7 @@ as well.
 
 ### Description
 
-This is a super simple FastAPI the dishes out Yo Mama Jokes in the same vain as
-[affirmations](https://www.affirmations.dev/)
+This is a simple FastAPI the dishes out Yo Mama Jokes in the same vain as dishing out affirmations like [@tildathurium](https://twitter.com/annthurium)'s [affirmations](https://www.affirmations.dev/) API.
 
 ### Link to Source Code
 
