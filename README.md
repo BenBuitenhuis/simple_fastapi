@@ -10,9 +10,9 @@ I built a simple FastAPI that will respond with random Yo' Mama! jokes.
 
 ### Category Submission:
 
-Random Roulette. Everybody's building a COVID19 app; this is mine. COVID19 got
+Random Roulette. Everybody's building a COVID19 app. COVID19 got
 nothing on a good Yo' Mama joke! Also, I can't program for crap so there's that
-as well.
+as well. One day I'll build a COVID19 FastAPI. That day ain't today.
 
 
 ### App Link
@@ -25,7 +25,7 @@ as well.
 
 ### Description
 
-This is a simple FastAPI app the dishes out Yo Mama Jokes in the same vain as dishing out affirmations like [@tildathurium](https://twitter.com/annthurium)'s [affirmations](https://www.affirmations.dev/) API.
+This is a simple FastAPI app that dishes out Yo Mama Jokes in the same vain as dishing out affirmations like [@tildathurium](https://twitter.com/annthurium)'s [affirmations](https://www.affirmations.dev/) API.
 
 ### Link to Source Code
 
@@ -33,14 +33,14 @@ This is a simple FastAPI app the dishes out Yo Mama Jokes in the same vain as di
 
 ### Permissive License
 
-MIT()
+[MIT](https://github.com/mrcartoonster/fastapi_DOapp/blob/DEV-4-blog-post/LICENSE)
 
 ## Background
 
-Building this app is to actually show how to deploy a FastAPI app
+Building this app to show how to deploy a FastAPI app
 to DigitalOcean's App Platform. DigitalOcean has examples of the major Python
 webframeworks, but not FastAPI. This post will fix that since I believe that
-DigitalOcean's App Platform is ideal for deploying FastAPI super fast.
+DigitalOcean's App Platform is ideal for deploying FastAPI fast.
 
 ### How I built it
 
