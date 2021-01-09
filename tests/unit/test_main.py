@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # tests/unit/test_main.py
 from src import __version__
-from src.helper import laugh, laughing, the_joke, yomama
+from src.helper import laugh, the_joke, yomama
 
 
 def test_version():
@@ -25,7 +25,7 @@ def test_passing_yomama(the_jokes):
     assert joke in the_jokes
 
 
-def test_laughing():
+def test_laughing(the_laughs):
     """
     Testing laughing emoji function.
     """
@@ -35,7 +35,7 @@ def test_laughing():
     the_laugh = laugh()
 
     # THEN Assert that it has one of the emojis in the our emoji list
-    assert the_laugh in laughing
+    assert the_laugh in the_laughs
 
 
 def test_the_joke_has_an_emoji(the_laughs):
